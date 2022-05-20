@@ -47,7 +47,7 @@ main {
 }
 
 li {
-  list-style-image: url(https://img.icons8.com/external-others-maxicons/40/000000/external-mushroom-forest-element-others-maxicons-3.png);
+  list-style-image: url(https://img.icons8.com/ios-filled/35/ffffff/butterfly-side-view.png);
   list-style-position: inside;
 }
 
@@ -74,4 +74,55 @@ a {
 
 a:hover {
   color: gray;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-content: center;
+}
+
+.horizontal div {
+  padding: 10px;
+  position: relative;
+  width: 300px;
+}
+
+.horizontal div::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  width: 70px;
+  height: 30px;
+  border: none;
+  background-color: var(--dark-purple);
+  color: white;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: black;
+  border: 2px solid white;
+}
+
+button:active {
+  background-color: var(--light-purple);
 }
