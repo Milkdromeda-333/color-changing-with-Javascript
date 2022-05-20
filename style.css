@@ -1,0 +1,77 @@
+:root {
+  --dark-purple: #9d4edd;
+  --light-purple: #c77dff;
+  --main-font: 'Truculenta', sans-serif;
+  --bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: var(--dark-purple);
+  font-size: 20px;
+  background-image: url(image-from-rawpixel-id-6267061-original.png);
+  background-position: bottom;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: var(--main-font);
+}
+
+h1 {
+  font-weight: var(--bold);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border: 5px solid var(--dark-purple);
+  margin: 10px;
+  ;
+}
+
+.square:hover {
+  border-color: var(--light-purple);
+  border-width: 10px;
+}
+
+li {
+  list-style-image: url(https://img.icons8.com/external-others-maxicons/40/000000/external-mushroom-forest-element-others-maxicons-3.png);
+  list-style-position: inside;
+}
+
+p {
+  margin: 5px;
+}
+
+
+details {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+summary {
+  color: var(--dark-purple);
+
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: gray;
+}
